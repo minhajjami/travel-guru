@@ -9,7 +9,7 @@ const Header = () => {
             <Form inline>
                 <FormControl type="text" placeholder="Search your destination" className="mr-sm-2" />
             </Form>
-            <Nav className="ml-auto">
+            <Nav className="mr-auto">
                 <Nav.Link href="/home">News</Nav.Link>
                 <Nav.Link href="#features">Destination</Nav.Link>
                 <Nav.Link href="#pricing">Blog</Nav.Link>
