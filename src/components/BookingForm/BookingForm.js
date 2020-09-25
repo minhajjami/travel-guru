@@ -2,12 +2,18 @@ import React, { useState } from 'react';
 import { Col, Form } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const BookingForm = (props) => {
-    const { title,origin } = props.placeInfo;
+    const { title,origin,key } = props.placeInfo;
     const [selectedFromDate,setSelectedFromDate] = useState(null);
     const [selectedToDate,setSelectedToDate] = useState(null)
+    const history = useHistory();
+
+    const handleBookings = () =>{
+        history.push(`/search?key=${key}`)
+    }
+
     return (
         <Form>
             <Form.Group controlId="formGroupEmail">
@@ -40,8 +46,7 @@ const BookingForm = (props) => {
                     ></DatePicker>
                 </Form.Group>
             </Form.Row>
-
-            <Link to='/search'><button className="btn btn-warning w-100">Start Booking</button></Link>
+            <button className="btn btn-warning w-100" onClick={handleBookings}>Start Booking</button>
         </Form>
     );
 };

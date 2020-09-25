@@ -1,0 +1,21 @@
+.left-side{
+    margin-left:10%;
+    width: 30%;
+}
+.right-side{
+    width:60%;
+}
+.title{
+    font-size: 70px;
+    line-height: 117px;
+}
+.booking-btn{
+    background: #F9A51A;
+    border-radius: 5px;
+    padding: 12px 29px;
+}
+.booking-font{
+    font-size: 16px;
+    line-height: 24px;
+}
+

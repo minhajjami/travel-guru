@@ -1,29 +1,37 @@
 import React from 'react';
-import { Button, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/Logo.png';
+import './Header.css';
 
 const Header = () => {
     return (
-        <Container>
-        <Navbar expand="lg">
-            <Navbar.Brand href="/home" className="logoImg"> <img src={logo} alt="" style={{width:"180px"}}/></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" className="mx-auto">
-                <Form inline>
-                    <FormControl type="text" placeholder="Search Your Destination..."className="mr-sm-2 search pr-5" />
-                </Form>
-                <Nav>
-                    <Nav.Link to='/news'>News</Nav.Link>
-                    <Nav.Link to='/destination'>Destination</Nav.Link>
-                    <Nav.Link to='/blog'>Blog</Nav.Link>
-                    <Nav.Link to='/contact'>Contact</Nav.Link>
-                    <Link to='/login'><Button className="btn btn-warning">Login</Button></Link> 
-                </Nav>
-                
-            </Navbar.Collapse>
-        </Navbar>
-    </Container>
+        <div className="container">
+            <nav className="navbar navbar-expand-lg">
+                <Link to="/">
+                    <img src={logo} alt="logo" className="mr-5 bg-img-color" />
+                </Link>
+                <input type="text" className="input-form" placeholder="Search your Destination..." />
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item active">
+                            <Link className="nav-link" to="/">News</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">Destination</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">Blog</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">Contact</Link>
+                        </li>
+                        <Link to="/login" style={{paddingLeft:'50px'}}>
+                            <button className="btn btn-warning">Login</button>
+                        </Link>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     );
 };
 

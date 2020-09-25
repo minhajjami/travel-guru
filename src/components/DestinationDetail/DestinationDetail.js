@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import places from '../../fakeData/places';
 import BookingForm from '../BookingForm/BookingForm';
 
-
 const DestinationDetail = () => {
     const { placeId } = useParams();
     const place= places.find(p=>p.id===placeId)

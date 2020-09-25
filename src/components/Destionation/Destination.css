@@ -1,0 +1,12 @@
+.box{
+    width: 200px;
+    height: 309px;
+    border-radius: 20px !important;
+    border: 2px solid rgb(190, 180, 156);
+}
+.card-img{
+    background-attachment: fixed;
+}
+.box:hover{
+    border: 4px solid #ffc107;
+}

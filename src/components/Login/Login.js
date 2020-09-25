@@ -129,7 +129,6 @@ const Login = () => {
     }
 
     return (
-
         <div>
             <div className="container">
                 <div className="login-form">
@@ -138,18 +137,18 @@ const Login = () => {
                         {
                             isLogIn ? <form className="mt-3 " onSubmit={handleSubmit} >
                                 <h4 className="ml-3" >Login</h4>
-                                <input name="email" onBlur={handleBlur} className="form-control m-3" required type="email" placeholder="Email" />
-                                <input name="password" onBlur={handleBlur} className="form-control m-3" required type="password" placeholder="Password" />
-                                <button type="submit" className="btn btn-warning form-control m-3 btn-width" >Login</button>
+                                <input name="email" onBlur={handleBlur} className="form-control p-2" required type="email" placeholder="Email" />
+                                <input name="password" onBlur={handleBlur} className="form-control p-2" required type="password" placeholder="Password" />
+                                <button type="submit" className="btn btn-warning form-control ml-3 mt-5 btn-width" >Login</button>
                             </form>
                                 : <form className="mt-3 " onSubmit={handleSubmit} >
                                     <h4 className="ml-3 " > Create an account</h4>
-                                    <input name="firstName" onBlur={handleBlur} className="form-control m-3" required type="firstName" placeholder="First name" />
-                                    <input name="lastName" onBlur={handleBlur} className="form-control m-3" required type="lastName" placeholder="Last name" />
-                                    <input name="email" onBlur={handleBlur} className="form-control m-3" required type="email" placeholder="email" />
-                                    <input name="password" onBlur={handleBlur} className="form-control m-3" required type="password" placeholder="Password" />
-                                    <input name="confirmPassword" onBlur={handleBlur} onChange={handleBlur} className="form-control m-3" required type="Password" placeholder="confirm password" />
-                                    <button type="submit" className="btn btn-warning form-control ml-3 btn-width" >Create an account</button>
+                                    <input name="firstName" onBlur={handleBlur} className="form-control p-2 " required type="firstName" placeholder="First name" />
+                                    <input name="lastName" onBlur={handleBlur} className="form-control p-2 " required type="lastName" placeholder="Last name" />
+                                    <input name="email" onBlur={handleBlur} className="form-control p-2" required type="email" placeholder="email" />
+                                    <input name="password" onBlur={handleBlur} className="form-control p-2" required type="password" placeholder="Password" />
+                                    <input name="confirmPassword" onBlur={handleBlur} onChange={handleBlur} className="form-control p-2" required type="Password" placeholder="confirm password" />
+                                    <button type="submit" className="btn btn-warning form-control ml-3 mt-5 btn-width" >Create an account</button>
                                 </form>
                         }
                         {

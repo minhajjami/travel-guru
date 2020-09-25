@@ -8,14 +8,15 @@
 }
 .login-form input{
     border:none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 .btn-width{
     width:90%;
 }
 .social-btn{
     width:95%;
-    background: white;
     border: 1px solid lightgray;
     box-sizing: border-box;
     border-radius: 57px;
