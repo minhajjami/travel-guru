@@ -1,13 +1,5 @@
 body, html {
   height: 100%;
-}
-.bg-image{
-  background-image: url('./assets/Image/Rectangle\ 1.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
   overflow-x: hidden;
-  height: 500px; 
 }
 
